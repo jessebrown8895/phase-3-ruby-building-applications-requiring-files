@@ -1,3 +1,4 @@
+require 'pry'
 class Garden
   attr_accessor :name
 
@@ -8,6 +9,7 @@ class Garden
   def plants
     Plant.all.select do |plant|
       plant.garden == self
+      
     end
   end
 end
